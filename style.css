@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,100;1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+}
+
+.leftNav {
+    top: 0;
+    position: fixed;
+    background: #000;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    display: none;
+    bottom: 0;
+}
+.leftNav i {
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+    right:  20px;
+}
+.leftNav .navba2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.leftNav .navba2 .logoNa2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.leftNav .navba2 .logoNa2 ul li {
+    line-height: 2rem;
+    list-style: none;
+}
+.leftNav .navba2 .logoNa2 ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.leftNav .navba2 .loginNa2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.leftNav .navba2 .loginNa2 a {
+    color: #999;
+    font-size: 20px;
+    text-decoration: none;
+}
+.leftNav .navba2 .loginNa2 .btn {
+    padding: 7px 20px;
+}
+.wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.logoNav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.logoNav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.logoNav ul li {
+    list-style: none;
+}
+.logoNav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.active {
+    color: #0f0;
+    border-bottom: 2px solid #0f0;
+}
+.loginNav {
+    display: flex;
+    gap: 20px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.loginNav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.loginNav .btn {
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.loginNav #bars {
+    font-size: 2rem;
+    border: 2px solid #999;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+.maintop {
+    display: flex;
+    min-height: 50vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.top {
+    width: 100%;
+}
+.toptitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+.toptitle span {
+    color: #F46752;
+}
+.toptitle h1 {
+    color: #000;
+    font-size: 50px;
+}
+.toptitle p {
+    max-width: 300px;
+}
+.toptitle .btnTop {
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #F46752;
+    border: none;
+}
+.toptitle .btnTop a {
+    color: #fff;
+    text-decoration: none;
+}
+.maintop .imgTop img {
+    width: 100%;
+}
+.chart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chart .chartImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+.chart .chartImg img {
+    width: 100%;
+}
+.chart .chartTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.chart .chartTitle span {
+    color: #F46752;
+}
+.chart .chartTitle h1 {
+    font-size: 50px;
+}
+.chart .chartTitle p {
+    max-width: 499px;
+    color: #000;
+}
+.chart .chartTitle a {
+    color: cadetblue;
+    text-decoration: none;
+}
+.family {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.family .titleFamily {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.family .titleFamily span {
+    color: #F46752;
+}
+.family .titleFamily h1 {
+    font-size: 50px;
+}
+.family .titleFamily p {
+    max-width: 400px;
+    color: #000;
+}
+.family .imgFamily img {
+    width: 100%;
+    border-radius: 20px;
+}
+.raining {
+    width: 100%;
+    height: 100vh;
+}
+.raining .rain .enebl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.raining .rain .enebl span {
+    color: #F46752;
+}
+.raining .rain .enebl h1 {
+    font-size: 50px;
+}
+.raining .rain .enebl p {
+    max-width: 900px;
+    text-align: center;
+    color: #000;
+}
+.raining .rain {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.rain .rainCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.rain .rainCards .card1,.card2,.card3 {
+    background: #f0e6e6;
+    padding: 20px;
+    width: 100%;
+}
+.rain .rainCards .card1 .cardTit1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.rain .rainCards .card2 .cardTit2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.rain .rainCards .card3 .cardTit3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.rain .rainCards .card3 .cardTit3 img {
+    width: 100%;
+}
+.works {
+    height: 50vh;
+    background: #5A6482;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.works .titleWork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.works  h1,p,h3 {
+    color: #fff;
+}
+.works .titleWork span {
+    color: #F46752;
+}
+.works .cardWork {
+    width: 100%;
+}
+.works .cardWork .cart1,.cart2,.cart3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+.works .cardWork {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.works .btnwirk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: #F46752;
+    border: none;
+}
+.works .btnwirk a {
+    color: #fff;
+    text-decoration: none;
+}
+.content {
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 60px;
+}
+.content .con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .conImg img {
+    width: 100%;
+    border-radius: 50px;
+}
+.content .titleCon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.content .titleCon span {
+    color: #F46752;
+} 
+.content .titleCon h1 {
+    font-size: 50px;
+}
+.content .titleCon p {
+    color: #000;
+}
+.mons {
+    width: 100%;
+    min-height: 50vh;
+}
+.mons .mon .monBox1 {
+    background: #7CAFDD;
+}
+.mons .monBox1 .monTitBox1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 20px;
+}
+.mons .monBox1 .monTitBox1 h2 {
+    color: #fff;
+}
+.mons .mon .monBox2 {
+    background: #FFAE68;
+    
+}
+.mons .monBox2 .monTitBox2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 20px;
+}
+.mons .monBox2 .monTitBox2 h2 {
+    color: #fff;
+}
+.mons .mon .monBox3 {
+    background: #FA5240;
+}
+.mons .monBox3 .monTitBox3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 20px;
+}
+.mons .monBox3 .monTitBox3 h2 {
+    color: #fff;
+}
+.mons .mon .monBox4 {
+    background: #126F85;
+}
+.mons .monBox4 .monTitBox4 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 20px;
+}
+.mons .monBox4 .monTitBox4 h2 {
+    color: #fff;
+}
+.mons .mon {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.today {
+    width: 100%;
+    min-height: 50vh;
+    background: #b4c3f1;
+    padding: 30px 40px;
+}
+.today .todayBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.today .todayBox .titImg img {
+    width: 100%;
+}
+.today .todayBox .titleToday {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+} 
+.today .todayBox .titleToday .titBtn {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background: #FA5240;
+}
+.today .todayBox .titleToday .titBtn a {
+    color: #fff;
+    text-decoration: none;
+}
+.today .todayBox .titleToday p {
+    color: #999;
+}
+.today .todayBox .titImg2 img {
+    width: 100%;
+}
+
+.ContactBox {
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ContactBox .titleContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+.ContactBox .titleContact p {
+    color: #000;
+} 
+.ContactBox .titleContact .inputBox {
+    display: flex;
+}
+.ContactBox .titleContact .inputBox input {
+    padding: 10px 30px;
+}
+.ContactBox .titleContact .inputBox button {
+    padding: 10px 20px;
+    background: #126F85;
+    border: none;
+}
+.ContactBox .titleContact .inputBox button a {
+    color: #fff;
+    text-decoration: none;
+}
+.ContactBox .titleContact .icons {
+    display: flex;
+    font-size: 20px;
+    gap: 20px;
+    transition: all 1s linear inherit;
+}
+.ContactBox .titleContact .icons i:hover {
+    transform: rotate(30deg);
+    color: aqua;
+}
+.ContactBox .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.ContactBox .links ul li {
+    line-height: 2.5rem;
+    list-style: none;
+}
+.ContactBox .links ul li a {
+    color:#000;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.ContactBox .links ul li a:hover {
+    color: aqua;
+}
+.footer {
+    width: 100%;
+}
+.footer .footerContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .footerContent .footerBtn {
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.footer .footerContent .footerBtn:hover {
+    background: #7CAFDD;
+    border: none;
+}
+.footer .footerContent .footerBtn a {
+    color: #000;
+    text-decoration: none;
+}
+@media (max-width: 940px) {
+    .toptitle h1 {
+        color: #000;
+        font-size: 30px;
+    }
+    .maintop .imgTop img {
+        width:500px ;
+    }
+}
+@media (max-width: 850px) {
+    .ContactBox {
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+@media (max-width: 800px) {
+    .rain .rainCards {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}
+@media (max-width: 700px) {
+    .logoNav {
+        gap: 25px;
+    }
+    .logoNav ul {
+        gap: 25px;
+    }
+    .top {
+        padding: 0 20px;
+        margin-top: 100px;
+    }
+    .maintop {
+        flex-direction: column;
+    }
+    .maintop .imgTop img {
+        width:250px ;
+    }
+    .chart .chartTitle h1 {
+        font-size: 30px;
+    }
+    .content {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 630px) {
+    .logoNav ul {
+        display: none;
+    }
+    .loginNav #bars {
+        display: block;
+    }
+    .navbar {
+        padding: 0 20px;
+    }
+    .loginNav a {
+        display: none;
+    }
+    .loginNav .btn {
+        display: none;
+    }
+    .content .titleCon h1 {
+        font-size: 30px;
+    }
+    .ContactBox .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .ContactBox {
+        margin-top: 300px;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100vh;
+        padding: 0 20px;
+        gap: 20px;
+    }
+    .footer {
+        margin-top: 200px;
+        padding: 0 20px;
+    }
+    .footer .footerContent h4 {
+        font-size: 10px;
+    }
+    .footer .footerContent {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer .footerContent .footerBtn {
+        padding: 5px 10px;
+    }
+    .footer .footerContent .footerBtn a {
+        font-size: 10px;
+    }
+}
+@media (max-width: 550px) {
+    .family .titleFamily h1 {
+        font-size: 30px;
+    }
+    .rainCards {
+        flex-direction: column;
+    }
+    .raining .rain .enebl h1 {
+        font-size: 30px;
+    }
+    .content .con {
+        flex-direction: column;
+    }
+    .mons .mon {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .today .todayBox {
+        flex-direction: column;
+
+    }
+    .today {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .chart {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 40px;
+        margin-top: 50px;
+    }
+    .family {
+        margin-top: 50px;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .rainCards {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .raining .rain .enebl img {
+        width: 100%;
+    }
+    .raining {
+        margin-top: 50px;
+    }
+    .raining .rain .enebl h1,h3 {
+        font-size: 15px;
+    }
+    .rain .dog {
+        position: absolute;
+        right: 0;
+        margin-top: 800px;
+    }
+    .works {
+        height: 100vh;
+        background: #5A6482;
+        margin-top: 800px;
+    }
+    .works .cardWork {
+        flex-direction: column;
+    }
+    .content .titleCon h1 {
+        font-size: 20px;
+    }
+    .mons {
+        padding: 0 20px;
+    }
+    .leftNav {
+        width: 100%;
+    }
+}
